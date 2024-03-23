@@ -122,6 +122,7 @@ Finally, as we are dealing with a heavily imbalanced dataset, we need to use a d
 
 
 **1. Using Random UnderSampler with Python**
+
 Click [here](https://github.com/A-Mohamed-Ashiq/Portfolio-Projects/blob/main/Python%20Codes/Random%20Under%20Sampling.ipynb) for the code. 
 
 **2. Using SMOTE node in IBM SPSS Modeler**
