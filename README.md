@@ -50,6 +50,8 @@ After distretisation:
 
 ### Data Exploration:
 
+Python File for Data Exploration: Click [here](https://github.com/A-Mohamed-Ashiq/Portfolio-Projects/blob/main/Python%20Codes/Data%20Exploration.ipynb).
+
 ![image](https://github.com/A-Mohamed-Ashiq/Portfolio-Projects/assets/104308123/324b1bd6-29a4-473a-8334-d09d1caf8df8)
 
 Fig. 1 Displays the states most promoted by DMOs
