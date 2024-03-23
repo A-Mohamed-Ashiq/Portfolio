@@ -14,7 +14,7 @@ The global tourism industry, including Destination Management Organisations (DMO
 #### Motivation
 Considering possible new lockdowns from a resurgence of covid 19 cases or from new diseases, DMOs must examine and comprehend these emerging trends and adaptations thoroughly. By doing so, they can effectively strategize and implement measures to enhance their business performance and ensure long-term success should a new lockdown be imposed.
 
-#### Business Problem 
+#### Business Problem
 The business problem is that DMOs cannot identify content strategies or upload schedules (I.e. what kinds of tweets or during business hours or not) that will result in positive sentiments during different phases of the pandemic. Thus, the business objective is to accurately predict if a tweet can generate strong sentiments in social media users that react to their social media content strategy during the different phases.
 
 #### Objective
@@ -121,10 +121,10 @@ Using LR instead of a decision tree as it tends to be less vulnerable to imbalan
 Finally, as we are dealing with a heavily imbalanced dataset, we need to use a different evaluation metric than accuracy. Thus, for the rest of the models, we will be using the **Sensitivity** of the model (how good the model is at picking up events), the hit-rate for events, also known as **Precision** (How good the model is at event guesses) and **AUC-ROC**. For our new model we strive for a model with sensitivity above 60%, precision above 50% and a acceptable AUC-ROC score, above 0.7.
 
 
-#### 1. Using Random UnderSampler with Python
+**1. Using Random UnderSampler with Python**
 Click [here](https://github.com/A-Mohamed-Ashiq/Portfolio-Projects/blob/main/Python%20Codes/Random%20Under%20Sampling.ipynb) for the code. 
 
-#### 2. Using SMOTE node in IBM SPSS Modeler
+**2. Using SMOTE node in IBM SPSS Modeler**
 1.	Attach the SMOTE node to the partition node
 2.	Use default parameters
 3.	Attach Distribution Graph and compare with original distribution
@@ -136,7 +136,7 @@ After:
 
 ![image](https://github.com/A-Mohamed-Ashiq/Portfolio-Projects/assets/104308123/6af53355-4e08-427f-939d-1fb0fa91fd37)
 
-#### 3. Using Balance Node in IBM SPSS Modeler
+**3. Using Balance Node in IBM SPSS Modeler**
 1.	Attach the balance node to the partition node.
 2.	Set the conditions and factors as follows:
 
@@ -151,10 +151,10 @@ After:
 
 ![image](https://github.com/A-Mohamed-Ashiq/Portfolio-Projects/assets/104308123/d2e26d17-9fe4-46d6-b976-22147db70650)
 
-#### 4. SMOTE_NC with CART in Python
+**4. SMOTE_NC with CART in Python**
 Click [here](https://github.com/A-Mohamed-Ashiq/Portfolio-Projects/blob/main/Python%20Codes/SMOTE-NC%20CART%20.ipynb) for the code. 
 
-#### 5. SMOTE_NC with Logistic Regression in Python
+**5. SMOTE_NC with Logistic Regression in Python**
 Click [here](https://github.com/A-Mohamed-Ashiq/Portfolio-Projects/blob/main/Python%20Codes/Logit%20with%20SMOTE-NC.ipynb) for the code. 
 
 
