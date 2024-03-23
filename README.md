@@ -93,27 +93,27 @@ As such, this model is completely unusable in solving the proposed problem since
 
 
 ### New Model Design
-**Imbalanced Learn’s RandomUndersampler**
+#### 1. Imbalanced Learn’s RandomUndersampler
 
 To undersample the majority class to a 1:1 ratio. The idea here is to randomly remove samples from the majority class until the classes are balanced. (Kumar & Abdelaziz, 2020) This may be suitable as the dataset is large with over 23k records, which means there is not a significant loss of information. The majority class is also less important than the minority class in this case since we are only interested in predicting positive sentiments. Thus, undersampling will force the model to focus more on the minority class. (Kumar & Abdelaziz, 2020) However, because it removes records by random, it will cause data loss and possibly cause underfitting.
 
-**Random Oversampling**.
+#### 2. Random Oversampling
 
 Similar to the previous approach, this method involves randomly upsampling the minority class. However, by duplicating minority records randomly, there is a risk of overfitting as the machine might overly rely on duplicated examples during learning.
 
-**IBM SPSS Modeler Balance Node**
+#### 3. Balance Node in IBM SPSS Modeler
 
 This node can be used to balance data by duplicating and then discarding records based on the specified conditions (IBM, n.d.). Using it to both oversample and undersample the minority and majority classes respectively, which might lead to better performance.
 
-**Synthetic Minority Over-sampling Technique (SMOTE) Node in SPSS Modeler**
+#### 4. Synthetic Minority Over-sampling Technique (SMOTE) Node in IBM SPSS Modeler
 
 SMOTE serves as a preprocessing technique to tackle class imbalance within the dataset. It aims to mitigate overfitting, a typical issue associated with upsampling the minority class, as it prevents the machine from relying excessively on duplicated examples during the learning process. This is done by creating new synthetic samples that are close to the other minority observations instead of just randomly duplicating the minority class examples. (Maklin, 2022) However, SMOTE typically does not work well on datasets with categorical features even after encoding, which is the case in our dataset. This is due to the nature of the algorithm, which uses interpolation. (Kumar & Abdelaziz, 2020) Given that SPSS Modeler offers a dedicated SMOTE node, we will explore its utility in our specific context.
 
-**SMOTE-NC**
+#### 5. SMOTE-NC
 
 Potentially the best method for our dataset. Synthetic Minority Oversampling Technique-Nominal Continuous is designed to be applied to mixed feature datasets like ours. In fact, it will not work unless it has both categorical and numerical features. The algorithm is similar to SMOTE for continuous variables, but now the nominal features will be considered using the value most common among the KNNs. (Kumar & Abdelaziz, 2020).
 
-**Logistic Regression**
+#### 6. Logistic Regression
 
 Using LR instead of a decision tree as it tends to be less vulnerable to imbalanced data, when compared to decision trees.
 
@@ -141,7 +141,6 @@ After:
 2.	Set the conditions and factors as follows:
 
 ![image](https://github.com/A-Mohamed-Ashiq/Portfolio-Projects/assets/104308123/6af8859d-704a-4f8b-b6bf-48e4ddeeaf75)
-
 
 3.	Attach distribution graph to the balance node and the partition node and compare the distribution before balancing and after:
 Before:
